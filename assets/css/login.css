@@ -3,6 +3,7 @@
 
 :root{
   --gradient: linear-gradient(-90deg,hsl(151, 58%, 46%) 0%,hsl(170, 75%, 41%) 100%);
+  --isabelline: hsl(36, 33%, 94%);
 }
 
 * {
@@ -17,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: hsl(0, 0%, 100%);
+  background: var(--isabelline);
 }
 .wrapper {
   position: relative;
