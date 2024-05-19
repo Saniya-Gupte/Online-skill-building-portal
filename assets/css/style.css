@@ -932,8 +932,53 @@ body {
   --ionicon-stroke-width: 40px;
 }
 
+/*-----------------------------------*\
+  #TESTIMONIALS
+\*-----------------------------------*/
 
 
+
+/*-----------------------------------*\
+  #CONTACTUS
+\*-----------------------------------*/
+
+.row{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image {
+  width: 50%;
+  object-fit: contain;
+}
+
+#contact-image {
+  width: 100%;
+}
+
+.box {
+  border: 0.1rem solid var(--kappel);
+  padding: 1em;
+}
+
+.form {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+textarea::placeholder {
+  font-size: 1.2em;
+  font-family: var(--ff-poppins);
+}
 
 
 /*-----------------------------------*\
@@ -1007,10 +1052,6 @@ body {
   color: var(--kappel);
   display: inline-block;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #BACK TO TOP
@@ -1473,4 +1514,51 @@ body {
     left: 0;
   }
 
+}
+
+@media (max-width: 1000px) {
+  .row{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 500px) {
+  textarea::placeholder {
+    font-size: 1em;
+  }
+
+  .box {
+    font-size: 14px;
+    padding: 0.5em;
+  }
+
+  .form {
+    padding: 16px;
+  }
+
+  .btn2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reduce-padding {
+    margin-top: -50px;
+  }
 }
