@@ -55,7 +55,7 @@
     - #HEADER
   -->
 
-    <header class="header" data-header>
+    <header class="header" id="header" data-header>
       <div class="container">
         <a href="#" class="logo">
           <img
@@ -66,7 +66,7 @@
           />
         </a>
 
-        <nav class="navbar" data-navbar>
+        <nav class="navbar" id="navbar" data-navbar>
           <div class="wrapper">
             <a href="#" class="logo">
               <img
@@ -78,7 +78,7 @@
             </a>
 
             <button
-              class="nav-close-btn"
+              class="nav-close-btn turn-text-dark"
               aria-label="close menu"
               data-nav-toggler
             >
@@ -88,53 +88,60 @@
 
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              <a href="#home" class="navbar-link turn-text-light" data-nav-link>Home</a>
             </li>
 
             <li class="navbar-item">
-              <a href="#about" class="navbar-link" data-nav-link>About</a>
+              <a href="#about" class="navbar-link turn-text-light" data-nav-link>About</a>
             </li>
 
             <li class="navbar-item">
-              <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
+              <a href="#courses" class="navbar-link turn-text-light" data-nav-link>Courses</a>
             </li>
 
             <li class="navbar-item">
-              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+              <a href="#blog" class="navbar-link turn-text-light" data-nav-link>Blog</a>
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Contact</a>
+              <a href="#" class="navbar-link turn-text-light" data-nav-link>Contact</a>
             </li>
           </ul>
         </nav>
 
         <div class="header-actions">
+          <div>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+              <span class="ball"></span>
+            </label>
+          </div>
           <button
             class="header-action-btn"
             aria-label="toggle search"
             title="Search"
           >
-            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            <ion-icon name="search-outline" class="turn-text-light" aria-hidden="true"></ion-icon>
           </button>
 
           <button class="header-action-btn" aria-label="cart" title="Cart">
-            <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+            <ion-icon name="cart-outline" class="turn-text-light" aria-hidden="true"></ion-icon>
 
-            <span class="btn-badge">0</span>
+            <span class="btn-badge turn-text-dark">0</span>
           </button>
 
         <a href="login.html" class="btn has-before">
-          <span class="span">Try for free</span>
+          <span class="span turn-text-dark">Try for free</span>
 
             <ion-icon
+              class="turn-text-dark"
               name="arrow-forward-outline"
               aria-hidden="true"
             ></ion-icon>
           </a>
 
           <button
-            class="header-action-btn"
+            class="header-action-btn turn-text-light"
             aria-label="open menu"
             data-nav-toggler
           >
@@ -160,20 +167,21 @@
         >
           <div class="container">
             <div class="hero-content">
-              <h1 class="h1 section-title">
+              <h1 class="h1 section-title turn-text-light">
                 The Best Program to <span class="span">Enroll</span> for
                 Exchange
               </h1>
 
-              <p class="hero-text">
+              <p class="hero-text turn-text-light">
                 Excepteur sint occaecat cupidatat non proident sunt in culpa qui
                 officia deserunt mollit.
               </p>
 
-              <a href="#" class="btn has-before">
+              <a href="#" class="btn has-before turn-text-dark">
                 <span class="span">Find courses</span>
 
                 <ion-icon
+                  class="turn-text-dark"
                   name="arrow-forward-outline"
                   aria-hidden="true"
                 ></ion-icon>
@@ -228,18 +236,18 @@
           <div class="container">
             <p class="section-subtitle">Categories</p>
 
-            <h2 class="h2 section-title">
+            <h2 class="h2 section-title turn-text-light">
               Online <span class="span">Classes</span> For Remote Learning.
             </h2>
 
-            <p class="section-text">
+            <p class="section-text turn-text-light">
               Consectetur adipiscing elit sed do eiusmod tempor.
             </p>
 
             <ul class="grid-list">
               <li>
                 <div class="category-card" style="--color: 170, 75%, 41%">
-                  <div class="card-icon">
+                  <div class="card-icon icon-badge">
                     <img
                       src="./assets/images/category-1.svg"
                       width="40"
@@ -251,20 +259,20 @@
                   </div>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Online Degree Programs</a>
+                    <a href="#" class="card-title turn-text-light">Online Degree Programs</a>
                   </h3>
 
-                  <p class="card-text">
+                  <p class="card-text turn-text-light">
                     Lorem ipsum dolor consec tur elit adicing sed umod tempor.
                   </p>
 
-                  <span class="card-badge">7 Courses</span>
+                  <span class="card-badge icon-badge">7 Courses</span>
                 </div>
               </li>
 
               <li>
                 <div class="category-card" style="--color: 351, 83%, 61%">
-                  <div class="card-icon">
+                  <div class="card-icon icon-badge">
                     <img
                       src="./assets/images/category-2.svg"
                       width="40"
@@ -276,20 +284,20 @@
                   </div>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Non-Degree Programs</a>
+                    <a href="#" class="card-title turn-text-light">Non-Degree Programs</a>
                   </h3>
 
-                  <p class="card-text">
+                  <p class="card-text turn-text-light">
                     Lorem ipsum dolor consec tur elit adicing sed umod tempor.
                   </p>
 
-                  <span class="card-badge">4 Courses</span>
+                  <span class="card-badge icon-badge">4 Courses</span>
                 </div>
               </li>
 
               <li>
                 <div class="category-card" style="--color: 229, 75%, 58%">
-                  <div class="card-icon">
+                  <div class="card-icon icon-badge">
                     <img
                       src="./assets/images/category-3.svg"
                       width="40"
@@ -301,20 +309,20 @@
                   </div>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Off-Campus Programs</a>
+                    <a href="#" class="card-title turn-text-light">Off-Campus Programs</a>
                   </h3>
 
-                  <p class="card-text">
+                  <p class="card-text turn-text-light">
                     Lorem ipsum dolor consec tur elit adicing sed umod tempor.
                   </p>
 
-                  <span class="card-badge">8 Courses</span>
+                  <span class="card-badge icon-badge">8 Courses</span>
                 </div>
               </li>
 
               <li>
                 <div class="category-card" style="--color: 42, 94%, 55%">
-                  <div class="card-icon">
+                  <div class="card-icon icon-badge">
                     <img
                       src="./assets/images/category-4.svg"
                       width="40"
@@ -326,14 +334,14 @@
                   </div>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Hybrid Distance Programs</a>
+                    <a href="#" class="card-title turn-text-light">Hybrid Distance Programs</a>
                   </h3>
 
-                  <p class="card-text">
+                  <p class="card-text turn-text-light">
                     Lorem ipsum dolor consec tur elit adicing sed umod tempor.
                   </p>
 
-                  <span class="card-badge">8 Courses</span>
+                  <span class="card-badge icon-badge">8 Courses</span>
                 </div>
               </li>
             </ul>
@@ -389,12 +397,12 @@
             <div class="about-content">
               <p class="section-subtitle">About Us</p>
 
-              <h2 class="h2 section-title">
+              <h2 class="h2 section-title turn-text-light">
                 Over 10 Years in <span class="span">Distant learning</span> for
                 Skill Development
               </h2>
 
-              <p class="section-text">
+              <p class="section-text turn-text-light">
                 Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod
                 ex tempor incididunt labore dolore magna aliquaenim ad minim.
               </p>
@@ -406,7 +414,7 @@
                     aria-hidden="true"
                   ></ion-icon>
 
-                  <span class="span">Expert Trainers</span>
+                  <span class="span turn-text-light">Expert Trainers</span>
                 </li>
 
                 <li class="about-item">
@@ -415,7 +423,7 @@
                     aria-hidden="true"
                   ></ion-icon>
 
-                  <span class="span">Online Remote Learning</span>
+                  <span class="span turn-text-light">Online Remote Learning</span>
                 </li>
 
                 <li class="about-item">
@@ -424,7 +432,7 @@
                     aria-hidden="true"
                   ></ion-icon>
 
-                  <span class="span">Lifetime Access</span>
+                  <span class="span turn-text-light">Lifetime Access</span>
                 </li>
               </ul>
 
@@ -448,7 +456,7 @@
           <div class="container">
             <p class="section-subtitle">Popular Courses</p>
 
-            <h2 class="h2 section-title">Pick A Course To Get Started</h2>
+            <h2 class="h2 section-title turn-text-light">Pick A Course To Get Started</h2>
 
             <ul class="grid-list">
               <li>
@@ -665,14 +673,14 @@
                   style="border-radius: 10px;"  
                   alt=""
                 />
-                <h3 style="font-size: medium;">Build Responsive Real- World Websites with HTML and CSS</h3>
-                    <span>Duration: 3 Weeks</span>
-                    <span>Level: Beginner</span>
-                    <span>Total Lessons: 8</span>     
+                <h3 style="font-size: medium;" class="turn-text-light">Build Responsive Real- World Websites with HTML and CSS</h3>
+                    <span class="turn-text-grey">Duration: 3 Weeks</span>
+                    <span class="turn-text-grey">Level: Beginner</span>
+                    <span class="turn-text-grey">Total Lessons: 8</span>     
 
                 <div class="price">$29.00</div>
                 <div class="buttons">
-                  <a class="buy">Buy now</a>
+                  <a class="buy turn-text-light">Buy now</a>
                   <a class="cart">Add to cart</a>
                 </div>
               </div>
@@ -691,14 +699,14 @@
                   style="border-radius: 10px;"  
                   alt=""
                 />
-                <h3 style="font-size: medium;">Java Programming Masterclass for Software Developers</h3>
-                    <span>Duration: 8 Weeks</span>
-                    <span>Level: Advanced</span>
-                    <span>Total Lessons: 15</span>     
+                <h3 style="font-size: medium;" class="turn-text-light">Java Programming Masterclass for Software Developers</h3>
+                    <span class="turn-text-grey">Duration: 8 Weeks</span>
+                    <span class="turn-text-grey">Level: Advanced</span>
+                    <span class="turn-text-grey">Total Lessons: 15</span>     
 
                 <div class="price">$49.00</div>
                 <div class="buttons">
-                  <a class="buy">Buy now</a>
+                  <a class="buy turn-text-light">Buy now</a>
                   <a class="cart">Add to cart</a>
                 </div>
               </div>
@@ -717,23 +725,24 @@
                   style="border-radius: 10px;"  
                   alt=""
                 />
-                <h3 style="font-size: medium;">The Complete Camtasia Course for Content Creators</h3>
-                    <span>Duration: 3 Weeks</span>
-                    <span>Level: Intermediate</span>
-                    <span>Total Lessons: 13</span>     
+                <h3 style="font-size: medium;" class="turn-text-light">The Complete Camtasia Course for Content Creators</h3>
+                    <span class="turn-text-grey">Duration: 3 Weeks</span>
+                    <span class="turn-text-grey">Level: Intermediate</span>
+                    <span class="turn-text-grey">Total Lessons: 13</span>     
 
                 <div class="price">$35.00</div>
                 <div class="buttons">
-                  <a class="buy">Buy now</a>
+                  <a class="buy turn-text-light">Buy now</a>
                   <a class="cart">Add to cart</a>
                 </div>
               </div>
             </div>
 
             <a href="#" class="btn has-before">
-              <span class="span">Browse more courses</span>
+              <span class="span turn-text-dark">Browse more courses</span>
 
               <ion-icon
+              class="turn-text-dark"
                 name="arrow-forward-outline"
                 aria-hidden="true"
               ></ion-icon>
@@ -746,6 +755,7 @@
       -->
 
         <section
+          id="wavy-bg"
           class="video has-bg-image"
           aria-label="video"
           style="background-image: url('./assets/images/video-bg.png')"
@@ -799,7 +809,7 @@
           <div class="container">
             <ul class="grid-list">
               <li>
-                <div class="stats-card" style="--color: 170, 75%, 41%">
+                <div class="stats-card colored-part" style="--color: 170, 75%, 41%">
                   <h3 class="card-title">29.3k</h3>
 
                   <p class="card-text">Student Enrolled</p>
@@ -807,7 +817,7 @@
               </li>
 
               <li>
-                <div class="stats-card" style="--color: 351, 83%, 61%">
+                <div class="stats-card colored-part" style="--color: 351, 83%, 61%">
                   <h3 class="card-title">32.4K</h3>
 
                   <p class="card-text">Class Completed</p>
@@ -815,7 +825,7 @@
               </li>
 
               <li>
-                <div class="stats-card" style="--color: 260, 100%, 67%">
+                <div class="stats-card colored-part" style="--color: 260, 100%, 67%">
                   <h3 class="card-title">100%</h3>
 
                   <p class="card-text">Satisfaction Rate</p>
@@ -823,7 +833,7 @@
               </li>
 
               <li>
-                <div class="stats-card" style="--color: 42, 94%, 55%">
+                <div class="stats-card colored-part" style="--color: 42, 94%, 55%">
                   <h3 class="card-title">354+</h3>
 
                   <p class="card-text">Top Instructors</p>
@@ -846,7 +856,7 @@
           <div class="container">
             <p class="section-subtitle">Latest Articles</p>
 
-            <h2 class="h2 section-title">Get News With Eduweb</h2>
+            <h2 class="h2 section-title turn-text-light">Get News With Eduweb</h2>
 
             <ul class="grid-list">
               <li>
@@ -1037,9 +1047,11 @@
             />
           </div>
         </section>
+        
+        <!-- Contact Us -->
         <section class="section reduce-padding">
           <div class="container">
-          <h2 class="h2 section-title">Contact Us</h2>
+          <h2 class="h2 section-title turn-text-light">Contact Us</h2>
   
           <div class="row">
               <div class="image">
@@ -1051,7 +1063,7 @@
                   <input type="email" placeholder="Email" class="box">
                   <input type="number" placeholder="Phone Number" class="box">
                   <textarea placeholder="Message" class="box" cols="30" rows="10"></textarea>
-                  <a href="#" class="btn btn2">
+                  <a href="#" class="btn btn2 turn-text-dark">
                       <span>Send Message</span>
                   </a>
               </form>

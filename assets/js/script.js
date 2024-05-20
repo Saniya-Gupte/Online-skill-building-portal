@@ -85,3 +85,88 @@ previewBox.forEach((close) => {
     preveiwContainer.style.display = "none";
   };
 });
+
+
+//Dark Mode
+
+const checkbox = document.getElementById("checkbox");
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("body-dark")
+  document.getElementById("header").classList.toggle("header-dark");
+
+  document.getElementById("navbar").classList.toggle("header-dark");
+  
+  const elements = document.getElementsByClassName('turn-text-light');
+  for (const element of elements) {
+    element.classList.toggle('text-light');
+  }
+
+  const icon_badge = document.getElementsByClassName('turn-text-dark');
+  for (const element of icon_badge) {
+    element.classList.toggle('text-dark');
+  }
+
+  var home = document.getElementById('home');
+  if (checkbox.checked === true) {
+    home.style.backgroundImage = "url('./assets/images/hero-bg2.svg')";
+  } else {
+    home.style.backgroundImage = "url('./assets/images/hero-bg.svg')";
+  }
+
+  const category_card = document.getElementsByClassName('category-card');
+  for (const element of category_card) {
+    element.classList.toggle('card-dark');
+  }
+
+  const card_icon_badge = document.getElementsByClassName('icon-badge');
+  for (const element of card_icon_badge) {
+    element.classList.toggle('card-badge-icon-dark');
+  }
+
+  document.getElementById("courses").classList.toggle("wavy-dark");
+
+  var wavy_bg = document.getElementById('wavy-bg');
+  if (checkbox.checked === true) {
+    wavy_bg.style.backgroundImage = "url('./assets/images/video-bg2.png')";
+  } else {
+    wavy_bg.style.backgroundImage = "url('./assets/images/video-bg.png')";
+  }
+
+  const coloured_part = document.getElementsByClassName('colored-part');
+  for (const element of coloured_part) {
+    element.classList.toggle('card-dark');
+  }
+
+  var wavy_bg = document.getElementById('blog');
+  if (checkbox.checked === true) {
+    wavy_bg.style.backgroundImage = "url('./assets/images/blog-bg2.svg')";
+  } else {
+    wavy_bg.style.backgroundImage = "url('./assets/images/blog-bg.svg')";
+  }
+
+  const course_card = document.getElementsByClassName('course-card');
+  for (const element of course_card) {
+    element.classList.toggle('course-card-dark');
+  }
+
+  const badge = document.getElementsByClassName('badge');
+  for (const element of badge) {
+    element.classList.toggle('badge-dark');
+  }
+
+  const preview = document.getElementsByClassName('preview');
+  for (const element of preview) {
+    element.classList.toggle('wavy-dark');
+  }
+
+  const grey = document.getElementsByClassName('turn-text-grey');
+  for (const element of grey) {
+    element.classList.toggle('wavy-dark');
+  }
+
+  const buy = document.getElementsByClassName('cart');
+  for (const element of buy) {
+    element.classList.toggle('back-light');
+  }
+
+})
