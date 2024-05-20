@@ -95,6 +95,14 @@ checkbox.addEventListener("change", () => {
   document.getElementById("header").classList.toggle("header-dark");
 
   document.getElementById("navbar").classList.toggle("header-dark");
+
+  if (checkbox.checked === true) {
+    document.getElementById('logo-main').src = './assets/images/logo2.svg';
+    document.getElementById('logo-nav').src = './assets/images/logo2.svg';
+  } else {
+    document.getElementById('logo-main').src = './assets/images/logo.svg';
+    document.getElementById('logo-nav').src = './assets/images/logo.svg';
+  }
   
   const elements = document.getElementsByClassName('turn-text-light');
   for (const element of elements) {
@@ -144,6 +152,13 @@ checkbox.addEventListener("change", () => {
     wavy_bg.style.backgroundImage = "url('./assets/images/blog-bg.svg')";
   }
 
+  var wavy_bg = document.getElementById('contactus');
+  if (checkbox.checked === true) {
+    wavy_bg.style.backgroundImage = "url('./assets/images/blog-bg2.svg')";
+  } else {
+    wavy_bg.style.backgroundImage = "url('./assets/images/blog-bg.svg')";
+  }
+
   const course_card = document.getElementsByClassName('course-card');
   for (const element of course_card) {
     element.classList.toggle('course-card-dark');
@@ -164,9 +179,41 @@ checkbox.addEventListener("change", () => {
     element.classList.toggle('wavy-dark');
   }
 
+  const grey2 = document.getElementsByClassName('turn-text-grey2');
+  for (const element of grey2) {
+    element.classList.toggle('grey-dark');
+  }
+
+  const grey3 = document.getElementsByClassName('turn-text-grey3');
+  for (const element of grey3) {
+    element.classList.toggle('grey-dark2');
+  }
+
   const buy = document.getElementsByClassName('cart');
   for (const element of buy) {
     element.classList.toggle('back-light');
   }
 
 })
+
+var swiper = new Swiper(".review-slider",{
+  spaceBetween: 20,
+  centeredSlides: true,
+  grabCursor: true,
+  autoplay:{
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});
