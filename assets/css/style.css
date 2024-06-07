@@ -521,12 +521,7 @@ body {
 }
 
 .course-card-dark {
-  background-color: hsla(60, 7%, 75%, 0.2) !important;
-}
-
-.badge-dark {
-  background-color: hsla(63, 91%, 48%, 0.2) !important;
-  color: rgb(221, 232, 12) !important;
+  background-color: hsla(0, 0%, 100%, 0.856) !important;
 }
 
 .grey-dark {
@@ -896,6 +891,12 @@ body {
 .course-preview .preview .fa-times:hover {
   transition: var(--transition-2);
   color: #989495;
+}
+
+.close-icon {
+  position:absolute;
+  top: 16px;
+  right: -6px;
 }
 
 .course-preview .preview h3 {

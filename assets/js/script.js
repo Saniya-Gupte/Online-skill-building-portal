@@ -164,11 +164,6 @@ checkbox.addEventListener("change", () => {
     element.classList.toggle('course-card-dark');
   }
 
-  const badge = document.getElementsByClassName('badge');
-  for (const element of badge) {
-    element.classList.toggle('badge-dark');
-  }
-
   const preview = document.getElementsByClassName('preview');
   for (const element of preview) {
     element.classList.toggle('wavy-dark');
